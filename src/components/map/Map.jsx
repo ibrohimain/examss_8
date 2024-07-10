@@ -45,7 +45,7 @@ const Map = () => {
     };
 
     return (
-        <div className='w-[100%] 2xl:w-[100%] xl:w-[100%] lg:w-[100%] md:w-[100%] sm:w-[100%] 2xl:h-[670px] xl:h-[650px] lg:h-[650px] md:h-[600px] sm:h-[600px] h-[1400px] mx-auto mb-[100px] mt-[10px]'>
+        <div className='w-[100%] 2xl:w-[100%] xl:w-[100%] lg:w-[100%] md:w-[100%] sm:w-[100%] 2xl:h-[670px] xl:h-[650px] lg:h-[650px] md:h-[600px] sm:h-[600px] h-[1400px] mx-auto mb-[150px] mt-[10px]'>
             <div className='w-[95%] 2xl:w-[1440px] h-[100%] 2xl:flex xl:flex lg:flex md:flex sm:flex justify-between mx-auto'>
                 <div className='w-[100%] 2xl:w-[49%] xl:w-[49%] lg:w-[49%] md:w-[49%] sm:w-[49%] 2xl:h-[100%] xl:h-[100%] lg:h-[100%] md:h-[100%] sm:h-[100%] h-[49%] rounded-[20px]'>
                     <iframe

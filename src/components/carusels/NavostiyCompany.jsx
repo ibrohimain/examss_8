@@ -55,7 +55,7 @@ const NavostiyCompany = () => {
     };
 
     return (
-        <div className='w-[95%] 2xl:w-[95%] xl:w-[95%] lg:w-[95%] md:w-[95%] xl:h-[450px] 2xl:h-[600px] lg:h-[450px] md:h-[450px] sm:h-[550px] h-[500px] mx-auto mt-[30px]'>
+        <div className='w-[95%] 2xl:w-[95%] xl:w-[95%] lg:w-[95%] md:w-[95%] xl:h-[450px] 2xl:h-[600px] lg:h-[450px] md:h-[450px] sm:h-[550px] h-[500px] mx-auto mt-[30px] mb-[50px]'>
             <div className='w-[100%] 2xl:w-[1440px] mx-auto h-[100%] 2xl:flex xl:flex lg:flex '>
                 <div className='w-[100%] 2xl:w-[25%] xl:w-[20%] lg:w-[20%] md:w-[100%] sm:w-[100%]  md:h-[10%] 2xl:h-[100%] xl:h-[100%] lg:h-[100%] p-4'>
                     <h2 className='text-[30px] font-semibold leading-9 mt-[30px] w-[50%]'>Новости компании</h2>

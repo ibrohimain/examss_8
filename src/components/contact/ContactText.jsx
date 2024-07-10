@@ -67,7 +67,7 @@ const ContactText = () => {
     };
 
     return (
-        <div className='2xl:w-[1440px] xl:w-[95%] lg:w-[95%] md:w-[95%] sm:w-[95%] w-[95%] h-auto  mx-auto'>
+        <div className='2xl:w-[1440px] xl:w-[95%] lg:w-[95%] md:w-[95%] sm:w-[95%] w-[95%] h-auto mb-[100px]  mx-auto'>
             <h2 className='text-[40px] mb-2 mt-2'>Контакты</h2>
             <div className='2xl:flex xl:flex lg:flex justify-between'>
                 <div className='2xl:w-[49.5%] xl:w-[49.5%] lg:w-[49.5%] md:w-[100%] h-[850px] 2xl:h-[650px] xl:h-[650px] lg:h-[670px] md:h-[650px] sm:h-[650px] rounded-[10px] bg-white flex items-center justify-center '>

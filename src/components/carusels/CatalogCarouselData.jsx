@@ -116,7 +116,7 @@ const CatalogCarouselData = () => {
     };
 
     return (
-        <div className='w-[95%] 2xl:w-[1440px] xl:w-[95%] lg:w-[95%] md:w-[95%] md:h-[750px] sm:h-[820px] h-[850px] mx-auto mb-[40px]'>
+        <div className='w-[95%] 2xl:w-[1440px] xl:w-[95%] lg:w-[95%] md:w-[95%] md:h-[750px] sm:h-[820px] h-[850px] mx-auto mb-[150px]'>
             <div className='w-[100%] h-[100%] 2xl:flex xl:flex lg:flex '>
                 <div className='w-[100%] 2xl:w-[20%] xl:w-[20%] lg:w-[20%] md:w-[100%] sm:w-[100%]  md:h-[10%] 2xl:h-[100%] xl:h-[100%] lg:h-[100%] p-4 mt-[25px]'>
                     <h2 className='text-[30px] font-semibold'>Каталог товаров</h2>

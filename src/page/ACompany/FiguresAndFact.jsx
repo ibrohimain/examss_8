@@ -2,7 +2,7 @@ import React from 'react'
 
 const FiguresAndFact = () => {
     return (
-        <div className='2xl:w-[1445px] xl:w-[95%] lg:w-[95%] md:w-[95%] sm:w-[95%] w-[95%] h-[450px] mx-auto 2xl:flex xl:flex lg:flex'>
+        <div className='2xl:w-[1445px] xl:w-[95%] lg:w-[95%] md:w-[95%] sm:w-[95%] w-[95%] h-[450px] mx-auto 2xl:flex xl:flex lg:flex mb-[80px]'>
             <div className='2xl:w-[50%] xl:w-[50%] lg:w-[40%] md:w-[100%] sm:w-[100%] w-[100%] 2xl:h-[100%] xl:h-[100%] lg:h-[100%] md:h-[20%] sm:h-[20%] h-[20%]'>
                 <h2 className='text-[30px]'>Цифры и факты</h2>
                 <p className='2xl:w-[45%] xl:w-[50%] lg:w-[60%] md:w-[60%] sm:w-[60%] w-[95%] text-[gray]'>Мы работаем на результат и продаём только качественную продукцию</p>

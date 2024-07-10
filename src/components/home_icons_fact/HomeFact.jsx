@@ -2,7 +2,7 @@ import React from 'react'
 
 const HomeFact = () => {
     return (
-        <div className='w-[95%] 2xl:w-[1440px] xl:w-[95%] lg:w-[95%] md:w-[95%] sm:w-[95%] h-[400px] mx-auto mt-[80px] '>
+        <div className='w-[95%] 2xl:w-[1440px] xl:w-[95%] lg:w-[95%] md:w-[95%] sm:w-[95%] h-[400px] mx-auto mt-[80px] mb-[80px] '>
             <div className='w-[100%] h-[100%]'>
                 <div className='w-[100%]'>
                     <h2 className='text-[34px] font-medium'>Почему выбирают нас?</h2>

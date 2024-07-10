@@ -4,7 +4,7 @@ import { clientData } from './ClientData';
 
 const NashiClient = () => {
     return (
-        <div className='w-[100%] bg-[#D5D1E1] mx-auto'>
+        <div className='w-[100%] bg-[#D5D1E1] mx-auto mb-[80px]'>
             <div className='w-[100%]  mx-auto h-auto mt-5 mb-5 p-5'>
                 <div className='w-[100%] 2xl:w-[100%] mx-auto'>
                     <div className='w-[95%] 2xl:w-[90%] flex flex-wrap justify-between items-center mx-auto'>
@@ -15,7 +15,7 @@ const NashiClient = () => {
                     </div>
                     <Marquee className='mt-20' pauseOnHover={true} speed={50}>
                         {clientData.map((item, index) => (
-                            <div key={index} className='w-[280px] ml-[10px] h-[230px] rounded-[10px] flex-shrink-0'>
+                            <div key={index} className='cursor-pointer w-[280px] ml-[10px] h-[230px] rounded-[10px] flex-shrink-0'>
                                 <div className='w-full h-[60%] border bg-white rounded-t-[10px] flex items-center justify-center'>
                                     <img src={item.img} alt={item.common_name} className='w-[40%] h-[80%]' />
                                 </div>

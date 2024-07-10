@@ -46,7 +46,7 @@ const ServicesCart = () => {
     };
 
     return (
-        <div className='2xl:w-[1440px] xl:w-[95%] lg:w-[95%] md:w-[95%] sm:w-[95%] w-[95%] mx-auto mt-[20px] mb-[20px]'>
+        <div className='2xl:w-[1440px] xl:w-[95%] lg:w-[95%] md:w-[95%] sm:w-[95%] w-[95%] mx-auto mt-[20px] mb-[80px]'>
             <div className='grid 2xl:grid-cols-2 xl:grid-cols-2 lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 grid-cols-1 gap-2'>
                 {servicesCartData.map((item, index) => (
                     <div key={index} className=' w-[99%] xl:h-[400px] 2xl:h-[400px] lg:h-[350px] md:h-[460px] sm:h-[400px] h-[420px] 2xl:flex xl:flex lg:flex items-center bg-[white] rounded-[20px]'>

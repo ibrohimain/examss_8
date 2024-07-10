@@ -123,12 +123,12 @@ const SpisokCarousel = () => {
     };
 
     return (
-        <div className='w-[95%] 2xl:w-[1440px] xl:w-[95%] lg:w-[95%] md:w-[95%]  h-auto mx-auto mb-[40px]'>
+        <div className='w-[95%] 2xl:w-[100%] xl:w-[95%] lg:w-[95%] md:w-[95%]  h-auto mx-auto '>
             <div className='w-[100%] h-[100%] 2xl:flex xl:flex lg:flex '>
                 <div className='w-[100%] 2xl:w-[100%] xl:w-[100%] lg:w-[100%] md:w-[100%] sm:w-[100%] h-[100%] 2xl:h-[100%] xl:h-[10%] lg:h-[100%] md:h-[90%] '>
                     <Slider ref={sliderRef} {...settings} className='mx-auto mt-[50px]'>
                         {catalogCrData.map((item, index) => (
-                            <div key={item.id} className='px-1 w-[100%]'>
+                            <div key={item.id} className='px-1 w-[100%] '>
                                 <div className="2xl:w-[100%] xl:w-[100%] lg:w-[100%] md:w-[100%] sm:w-[100%] w-[100%] 2xl:h-[580px] xl:h-[580px] lg:h-[550px] md:h-[500px] sm:h-[530px] h-[570px] border rounded-[20px]">
                                     <div className="w-[100%] h-[50%] bg-[white] flex items-center justify-center relative rounded-[20px]">
                                         <div className='absolute flex justify-between w-[95%] mx-auto top-3'>

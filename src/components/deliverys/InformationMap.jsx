@@ -2,7 +2,7 @@ import React from 'react'
 
 const InformationMap = () => {
     return (
-        <div className='2xl:w-[1440px] xl:w-[100%] lg:w-[100%] sm:w-[100%] md:w-[100%] w-[100%] mx-auto'>
+        <div className='2xl:w-[1440px] xl:w-[100%] lg:w-[100%] sm:w-[100%] md:w-[100%] w-[100%] mx-auto '>
             <div className='w-[95%] 2xl:w-[100%] xl:w-[95%] md:w-[95%] lg:w-[95%] sm:w-[95%] mx-auto 2xl:h-[700px] xl:h-[700px] lg:h-[730px] md:h-[500px] sm:h-[500px] h-[780px] mt-[10px] mb-[10px] '>
                 <h2 className='2xl:text-[34px] xl:text-[32px] lg:text-[30px] md:text-[28px] sm:text-[26px] text-[24px]'>Информация о доставке</h2>
                 <div className='2xl:w-[100%] xl:w-[100%] lg:w-[100%] md:w-[100%] sm:w-[100%] w-[100%] h-[60%] relative rounded-[20px] mt-[10px]'>

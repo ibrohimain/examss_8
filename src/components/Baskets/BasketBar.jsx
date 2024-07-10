@@ -69,12 +69,12 @@ const BasketBar = () => {
     return (
         <div className='2xl:w-[1440px] xl:w-[95%] lg:w-[95%] md:w-[95%] sm:w-[95%] w-[95%] mx-auto h-auto mt-[10px] mb-[10px] 2xl:flex xl:flex lg:flex md:flex justify-between'>
             <div className='2xl:w-[74%] xl:w-[74%] lg:w-[74%] md:w-[74%] sm:w-[100%] w-[100%]'>
-                {cart.map((item) => (
+                {cart.slice(1).map((item) => (
                     <div key={item.id} className='w-[100%] 2xl:h-[290px] xl:h-[290px] lg:h-[290px] md:h-[290px] sm:h-[220px] h-[200px] border border-[#E5E2EE] rounded-[15px] flex mb-[10px]'>
                         <div className='h-[100%] w-[40%] flex items-center justify-center bg-white relative'>
                             <div className='absolute flex justify-between w-[95%] mx-auto top-3'>
                                 <button className={`2xl:text-[14px] xl:text-[14px] lg:text-[13px] md:text-[12px] sm:text-[11px] text-[10px] pl-2 pr-2 2xl:h-[30px] xl:h-[28px] lg:h-[26px] md:h-[24px] sm:h-[22px] h-[20px] rounded-[20px] border font-semibold text-[#088269] ${item.title === 'Новинка' ? 'bg-[rgb(8,130,105,0.3)] w-[90px] border-[#088269]' :
-                                    item.title === 'Хит продаж' ? 'text-[8px] bg-[rgb(176,109,202,0.3)] border-[rgb(176,109,202)] text-[rgb(40,16,49)] w-[70px]' :
+                                    item.title === 'Хит продаж' ? 'text-[8px] bg-[rgb(176,109,202,0.3)] border-[rgb(176,109,202)] text-[rgb(40,16,49)] w-[120px]' :
                                         item.title === '-30%' ? 'bg-[rgba(242,247,87,0.3)] border-[rgba(242,247,87)] text-[#e6de3f] w-[60px]' : 'bg-[#BDDBC7]'
                                     }`}>{item.title}</button>
                                 <div className='flex gap-2'>

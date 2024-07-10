@@ -56,7 +56,7 @@ const Doctors = () => {
     }, []);
 
     return (
-        <div className='2xl:w-[1440px] xl:w-[95%] lg:w-[95%] md:w-[95%] sm:w-[95%] w-[95%] 2xl:h-[500px] xl:h-[500px] lg:h-[500px] md:h-[900px] mx-auto mt-[20px]'>
+        <div className='2xl:w-[1440px] xl:w-[95%] lg:w-[95%] md:w-[95%] sm:w-[95%] w-[95%] 2xl:h-[500px] xl:h-[500px] lg:h-[500px] md:h-[900px] mx-auto mt-[80px] mb-[120px]'>
             <div className='w-[100%] h-[100%] 2xl:flex xl:flex lg:flex '>
                 <div className='2xl:w-[50%] xl:w-[50%] lg:w-[50%] md:w-[95%] sm:w-[100%] w-[100%] 2xl:h-[100%] xl:h-[100%] lg:h-[100%] md:h-[20%] sm:h-[20%] h-[20%] mx-auto'>
                     <h2 className='2xl:text-[30px] xl:text-[28px] lg:text-[26px] md:text-[24px] sm:text-[20px] text-[20px] w-[80%]'>

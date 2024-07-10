@@ -1,7 +1,7 @@
 import { Search } from '@mui/icons-material';
 import React, { useState, useEffect } from 'react';
 import { upravlenie } from './Upravlenie';
-import Pagination from './Pagination'; 
+import Pagination from './Pagination';
 
 const Upravlenie = () => {
     const [currentPage, setCurrentPage] = useState(1);
@@ -64,7 +64,7 @@ const Upravlenie = () => {
 
     return (
         <>
-            <div className='w-[100%] h-auto mx-auto' >
+            <div className='w-[100%] h-auto mx-auto mb-[100px]' >
                 <div className='2xl:w-[1440px] xl:w-[95%] lg:w-[95%] md:w-[95%] sm:w-[95%] w-[95%]  mx-auto h-auto mt-4 mb-4 2xl:flex xl:flex lg:flex md:flex justify-between'>
                     <div className='2xl:w-[24%] xl:w-[24%] lg:w-24%] md:w-[24%] lg:w-[24%] '>
                         <div className='w-[100%] h-auto  rounded-[10px]'>

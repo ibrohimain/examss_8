@@ -14,7 +14,7 @@ const Infarmation = () => {
     };
 
     return (
-        <div className=' w-[100%] h-[700px] bg-[#088269] 2xl:flex xl:flex lg:flex md:flex sm:flex items-center mx-auto'>
+        <div className=' w-[100%] h-[700px] bg-[#088269] 2xl:flex xl:flex lg:flex md:flex sm:flex items-center mx-auto mb-[100px]'>
             <div className='w-[95%] 2xl:w-[1440px] xl:w-[95%] lg:w-[95%] h-[80%] mx-auto 2xl:flex xl:flex xl:flex-row 2xl:flex-row lg:flex-row md:flex-row sm:flex-row lg:flex md:flex sm:flex flex flex-col justify-center items-center '>
                 <div className='text-center 2xl:text-start xl:text-start lg:text-start md:text-start sm:text-start 2xl:w-[50%] xl:w-[50%] lg:w-[50%] md:w-[50%] sm:w-[50%] 2xl:h-full xl:h-full lg:h-full md:h-full sm:h-full w-[100%] 2xl:pt-0 xl:pt-0 lg:pt-0 md:pt-0 sm:pt-0 pt-[20px]'>
                     <h2 className='2xl:text-[34px] xl:text-[34px] lg:text-[32px] md:text-[30px] sm:text-[28px] text-[20px] font-medium text-white'>Информация о компании</h2>

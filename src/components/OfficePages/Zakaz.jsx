@@ -2,7 +2,7 @@ import React from 'react'
 
 const Zakaz = () => {
     return (
-        <div className='2xl:w-[1440px] xl:w-[95%] lg:w-[95%] md:w-[95%] sm:w-[95%] w-[95%] h-auto mx-auto bg-white rounded-[10px] pt-5 pb-10 mt-[10px] mb-[50px]'>
+        <div className='2xl:w-[1440px] xl:w-[95%] lg:w-[95%] md:w-[95%] sm:w-[95%] w-[95%] h-auto mx-auto bg-white rounded-[10px] pt-5 pb-10 mt-[10px] mb-[150px]'>
             <div className='w-[95%] h-[100%] mx-auto 2xl:flex xl:flex md:flex lg:flex'>
                 <div className='2xl:w-[50%] xl:w-[50%] lg:w-[50%] md:w-[50%] sm:w-[50%] w-[100%] pt-10 h-[100%] flex items-center'>
                     <h2 className='w-[90%] 2xl:text-[36px] xl:text-[32px] lg:text-[28px] md:text-[24px] sm:text-[20px] text-[18px]'>Закажите у нас комплеское оснащение</h2>

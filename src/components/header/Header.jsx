@@ -120,7 +120,7 @@ const Header = () => {
                         onMouseLeave={() => setIsHovereds(false)}
                     >
                         <li className='text-gray cursor-pointer 2xl:block md:text-[13px] lg:text-[15px] xl:text-[16px] 2xl:text-[16px]'>
-                            <Link to='/acompany'>О компании</Link>
+                            <Link to='/acompany'>Блог</Link>
                         </li>
                         <div
                             className={`absolute transition-all duration-300 ease-in-out z-10 ${isHovereds ? 'h-auto pt-2 pb-2' : 'h-0'
@@ -211,20 +211,19 @@ const Header = () => {
                         {isCategoryVisible && (
                             <div className='absolute z-20 top-[50px] left-0 w-[300px] h-auto bg-white border border-gray-200 shadow-lg' ref={dropdownRef}>
                                 <ul className='w-[90%] mx-auto mt-[10px] mb-[10px]'>
-                                    <li className='w-[250px] mt-[10px] font-light text-[15px] cursor-pointer' >Анестезиология</li>
-                                    <li className='w-[250px] mt-[10px] font-light text-[15px] cursor-pointer' >Гинекологическое оборудование</li>
-                                    <li className='w-[250px] mt-[10px] font-light text-[15px] cursor-pointer' >Дерматологическое оборудование</li>
-                                    <li className='w-[250px] mt-[10px] font-light text-[15px] cursor-pointer' >Ветеринарное оборудование</li>
-                                    <li className='w-[250px] mt-[10px] font-light text-[15px] cursor-pointer' >Лабораторное оборудование</li>
-                                    <li className='w-[250px] mt-[10px] font-light text-[15px] cursor-pointer' >ЛОР оборудование</li>
-                                    <li className='w-[250px] mt-[10px] font-light text-[15px] cursor-pointer' >Мебель медицинская</li>
-                                    <li className='w-[250px] mt-[10px] font-light text-[15px] cursor-pointer' >Оборудование для медицинской метрологии</li>
-                                    <li className='w-[250px] mt-[10px] font-light text-[15px] cursor-pointer' >Модели анатомические</li>
-                                    <li className='w-[250px] mt-[10px] font-light text-[15px] cursor-pointer' >Мониторы пациента</li>
-                                    <li className='w-[250px] mt-[10px] font-light text-[15px] cursor-pointer' >Мебель и оборудование для неонатологии</li>
-                                    <li className='w-[250px] mt-[10px] font-light text-[15px] cursor-pointer' >Педиатрическое оборудование</li>
-                                    <li className='w-[250px] mt-[10px] font-light text-[15px] cursor-pointer' >Операционные столы</li>
-                                    <li className='w-[250px] mt-[10px] font-light text-[15px] cursor-pointer' >Офтальмологическое оборудование</li>
+                                    <li className='w-[250px] mt-[10px] font-light text-[15px] cursor-pointer' ><Link to='/proizvoditel'>Производители</Link></li>
+                                    <li className='w-[250px] mt-[10px] font-light text-[15px] cursor-pointer' ><Link to='/officePage'>Кабинеты под ключ</Link></li>
+                                    <li className='w-[250px] mt-[10px] font-light text-[15px] cursor-pointer' ><Link to='/uslugi'>Услуги</Link></li>
+                                    <li className='w-[250px] mt-[10px] font-light text-[15px] cursor-pointer' ><Link to='/aksia'>Акции</Link></li>
+                                    <li className='w-[250px] mt-[10px] font-light text-[15px] cursor-pointer' ><Link to='/contact'>Контакты</Link></li>
+                                    <li className='w-[250px] mt-[10px] font-light text-[15px] cursor-pointer' ><Link to='/acompany'>О компании</Link></li>
+                                    <li className='w-[250px] mt-[10px] font-light text-[15px] cursor-pointer' ><Link to='/delivery'>Доставка</Link></li>
+                                    <li className='w-[250px] mt-[10px] font-light text-[15px] cursor-pointer' ><Link to='/payment'>Оплата</Link></li>
+                                    <li className='w-[250px] mt-[10px] font-light text-[15px] cursor-pointer' ><Link to=''>Блог</Link></li>
+                                    <li className='w-[250px] mt-[10px] font-light text-[15px] cursor-pointer' ><Link to=''>Блог</Link></li>
+                                    <li className='w-[250px] mt-[10px] font-light text-[15px] cursor-pointer' ><Link to='/vakansia'>Вакансии</Link></li>
+                                    <li className='w-[250px] mt-[10px] font-light text-[15px] cursor-pointer' ><Link to='/otziv'>Отзывы </Link></li>
+                                    <li className='w-[250px] mt-[10px] font-light text-[15px] cursor-pointer' ><Link to='/certificat'>Сертификаты</Link></li>
                                 </ul>
                             </div>
                         )}

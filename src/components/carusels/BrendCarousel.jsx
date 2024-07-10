@@ -56,7 +56,7 @@ const BrendCarousel = () => {
     };
 
     return (
-        <div className='w-[100%] 2xl:h-[500px] xl:h-[450px] lg:h-[450px] md:h-[400px] sm:h-[550px] h-[550px] mx-auto mt-[10px] mb-[40px]'>
+        <div className='w-[100%] 2xl:h-[500px] xl:h-[450px] lg:h-[450px] md:h-[400px] sm:h-[550px] h-[550px] mx-auto mt-[10px] mb-[80px]'>
             <div className='2xl:w-[1440px] xl:w-[95%] lg:w-[95%] md:w-[95%] sm:w-[95%] w-[95%] h-[100%] 2xl:flex xl:flex lg:flex md:flex  items-center mx-auto'>
                 <div className='2xl:w-[30%] xl:w-[20%] lg:w-[20%] md:w-[20%] 2xl:h-[100%] xl:h-[100%] lg:h-[100%] md:h-[100%] h-[25%] p-4 '>
                     <h2 className='text-[30px] font-semibold mt-[20px]'>Бренды</h2>

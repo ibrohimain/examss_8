@@ -78,7 +78,7 @@ const VeryAksia = () => {
     };
 
     return (
-        <div className='w-[1440px] h-auto mx-auto mt-4 flex flex-col items-center pb-4 pt-4'>
+        <div className='w-[1440px] h-auto mx-auto mt-4 mb-[100px] flex flex-col items-center pb-4 pt-4'>
             <div className='w-full flex justify-between'>
                 <div className='w-[20%] h-[240px] rounded-[20px] border'>
                     <h2 className='w-[90%] mx-auto text-[18px] mt-2'>Категории</h2>

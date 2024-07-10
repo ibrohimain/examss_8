@@ -2,10 +2,9 @@ import React, { useEffect, useState } from 'react';
 import { FaAngleRight } from 'react-icons/fa';
 import { directData } from './direct';
 import { MdOutlineChecklist } from 'react-icons/md';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 const Directions = () => {
-
     const [isSmScreen, setIsSmScreen] = useState(false);
     const [is2xlScreen, setIs2xlScreen] = useState(false);
 

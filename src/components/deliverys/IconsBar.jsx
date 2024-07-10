@@ -29,7 +29,7 @@ const IconsBar = () => {
 
 
     return (
-        <div className='2xl:w-[1440px] xl:w-[95%] lg:w-[95%] md:w-[95%] sm:w-[95%] w-[95%] h-auto  mx-auto'>
+        <div className='2xl:w-[1440px] xl:w-[95%] lg:w-[95%] md:w-[95%] sm:w-[95%] w-[95%] h-auto  mx-auto mb-[60px]'>
             <div className='w-[100%] 2xl:h-[400px] xl:h-[400px] lg:h-[400px] md:h-[320px] sm:h-[620px] h-auto  mx-auto'>
                 <h2 className='2xl:text-[36px] xl:text-[34px] lg:text-[32px] md:text-[30px] sm:text-[28px] text-[22px]'>С нами выгодно и удобно</h2>
                 <div className=' grid 2xl:grid-cols-4 xl:grid-cols-4 lg:grid-cols-4 md:grid-cols-4 sm:grid-cols-2 grid-cols-2 gap-2 mt-[30px]'>

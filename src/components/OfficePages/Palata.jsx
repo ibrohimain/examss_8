@@ -38,7 +38,6 @@ const Palata = () => {
                 return (
                     <div className='w-[95%] h-auto mx-auto pt-[10px] pb-[10px]'>
                         <SpisokCarousel />
-
                     </div>
                 );
             default:
@@ -47,7 +46,7 @@ const Palata = () => {
     };
 
     return (
-        <div className='2xl:w-[1440px] xl:w-[95%] lg:w-[95%] md:w-[95%] sm:w-[95%] w-[95%] mx-auto'>
+        <div className='2xl:w-[1440px] xl:w-[95%] lg:w-[95%] md:w-[95%] sm:w-[95%] w-[95%] mx-auto '>
             <h2 className='2xl:text-[36px] xl:text-[32px] lg:text-[28px] md:text-[24px] sm:text-[20px] text-[16px] 2xl:w-[60%] xl:w-[60%] lg:W-[60%] md:w-[75%] sm:w-[75%] w-[80%]'>Комплексное оснащение палаты реанимации и интенсивной терапии</h2>
             <div>
                 <div className='w-[100%] h-[350px]'>
@@ -59,9 +58,9 @@ const Palata = () => {
                         <span className='mt-[10px] block 2xl:text-[16px] xl:text-[15px] lg:text-[14px] md:text-[13px] sm:text-[12px] text-[11px]'>Скачать каталог "Стандарты оснащения отделений"</span>
                     </div>
                 </div>
-                <div className='w-[100%] h-auto rounded-[10px] mt-[20px]'>
+                <div className='w-[100%] h-auto rounded-[10px] mt-[120px] mb-[150px]'>
                     <div className='w-[100%] h-[20%] '>
-                        <ul className='flex items-center gap-5 h-[100%] w-[95%] mx-auto'>
+                        <ul className='flex items-center gap-5 h-[100%] w-[95%] mx-auto mb-5'>
                             <li className={`font-semibold cursor-pointer ${selectedTab === 'standards' ? 'text-blue-500' : ''}`} onClick={() => setSelectedTab('standards')}>Стандарты оснащения</li>
                             <li className={`font-semibold cursor-pointer ${selectedTab === 'products' ? 'text-blue-500' : ''}`} onClick={() => setSelectedTab('products')}>Список товаров</li>
                         </ul>
