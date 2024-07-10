@@ -13,7 +13,7 @@ const Document = () => {
     };
 
     return (
-        <div className='w-[100%] h-[500px] bg-[#D5D1E1] mb-[20px] 2xl:flex xl:flex lg:flex md:flex sm:flex items-center mt-[80px] mb-[80px]'>
+        <div className='w-[100%] h-[500px] bg-[#D5D1E1] 2xl:flex xl:flex lg:flex md:flex sm:flex items-center mt-[80px] mb-[80px]'>
             <div className='w-[95%] h-[90%] mx-auto 2xl:flex xl:flex xl:flex-row 2xl:flex-row lg:flex-row md:flex-row sm:flex-row lg:flex md:flex sm:flex flex flex-col justify-center items-center'>
                 <div className='text-center 2xl:text-start xl:text-start lg:text-start md:text-start sm:text-start 2xl:w-[50%] xl:w-[50%] lg:w-[50%] md:w-[50%] sm:w-[50%] 2xl:h-full xl:h-full lg:h-full md:h-full sm:h-full w-[100%] 2xl:pt-0 xl:pt-0 lg:pt-0 md:pt-0 sm:pt-0 pt-[20px]'>
                     <h2 className='2xl:text-[36px] xl:text-[34px] lg:text-[32px] md:text-[30px] sm:text-[28px] text-[24px] font-semibold text-black'>Информация о компании</h2>
