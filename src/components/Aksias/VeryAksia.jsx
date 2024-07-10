@@ -78,12 +78,12 @@ const VeryAksia = () => {
     };
 
     return (
-        <div className='w-[1440px] h-auto mx-auto mt-4 mb-[100px] flex flex-col items-center pb-4 pt-4'>
-            <div className='w-full flex justify-between'>
-                <div className='w-[20%] h-[240px] rounded-[20px] border'>
+        <div className='2xl:w-[1440px] xl:w-[95%] lg:w-[95%] md:w-[95%] sm:w-[95%] w-[95%] h-auto mx-auto mt-4 mb-[100px] flex flex-col items-center pb-4 pt-4'>
+            <div className='w-full 2xl:flex xl:flex lg:flex justify-between'>
+                <div className='2xl:w-[20%] xl:w-[20%] lg:w-[20%] md:w-[100%] sm:w-[100%] w-[100%]  h-auto pb-4 pt-1 mb-[15px] rounded-[20px] border'>
                     <h2 className='w-[90%] mx-auto text-[18px] mt-2'>Категории</h2>
                     <hr className='w-[90%] mx-auto mt-3 mb-3' />
-                    <ul className='w-[90%] mx-auto'>
+                    <ul className='w-[90%] mx-auto 2xl:block xl:block lg:block md:flex sm:flex  gap-1'>
                         <li className='flex justify-between items-center mt-3 cursor-pointer' onClick={() => handleCategoryChange('Группы товаров')}>Группы товаров<MdChevronRight /></li>
                         <li className='flex justify-between items-center mt-3 cursor-pointer' onClick={() => handleCategoryChange('Мониторы')}>Мониторы<MdChevronRight /></li>
                         <li className='flex justify-between items-center mt-3 cursor-pointer' onClick={() => handleCategoryChange('Лампы')}>Лампы<MdChevronRight /></li>
@@ -91,7 +91,7 @@ const VeryAksia = () => {
                         <li className='flex justify-between items-center mt-3 cursor-pointer' onClick={() => handleCategoryChange('Рентгены')}>Рентгены<MdChevronRight /></li>
                     </ul>
                 </div>
-                <div className='w-[79%] h-auto grid grid-cols-3 gap-4'>
+                <div className='2xl:w-[79%] xl:w-[79%] lg:w-[79%] md:w-[100%] sm:w-[100%] w-[100%] h-auto grid 2xl:grid-cols-3 xl:grid-cols-3 lg:grid-cols-3 md:grid-cols-3 sm:grid-cols-2 grid-cols-2 gap-4'>
                     {paginatedData.map((item, index) => (
                         <div key={index} className="2xl:w-[100%] xl:w-[100%] lg:w-[100%] md:w-[100%] sm:w-[100%] w-[100%] 2xl:h-[560px] xl:h-[580px] lg:h-[550px] md:h-[500px] sm:h-[530px] h-[570px] border rounded-[20px]">
                             <div className="w-[100%] h-[55%] bg-[white] flex items-center justify-center relative rounded-[20px]">
@@ -118,7 +118,7 @@ const VeryAksia = () => {
                                 <img
                                     src={item.img}
                                     alt={`Complex ${index + 1}`}
-                                    className="w-[60%] h-[70%] object-cover rounded-tr-[20px] rounded-tl-[20px] cursor-pointer"
+                                    className="w-[80%] h-[70%]  object-contain rounded-tr-[20px] rounded-tl-[20px] cursor-pointer"
                                     onClick={() => navigate(`/product/${item.id}`)}
                                 />
                             </div>
