@@ -4,6 +4,7 @@ import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import { companyCarouselData } from './companyCarousel';
+import { Link } from 'react-router-dom';
 
 const CompanyCarousel = () => {
     const sliderRef = useRef(null);
@@ -61,7 +62,7 @@ const CompanyCarousel = () => {
                 </div>
                 <Slider ref={sliderRef} {...settings} className='w-[95%] 2xl:w-[100%] xl:w-[95%] lg:w-[95%] md:w-[95%] sm:w-[95%] mx-auto mt-[20px] space-x-1' >
                     {companyCarouselData.map((item, index) => (
-                        <div className='2xl:w-[55%] xl:w-[80%] mx-auto ' key={index}>
+                        <div className='2xl:w-[55%] xl:w-[80%] mx-auto cursor-pointer ' key={index}>
                             <div className="2xl:w-[100%] md:w-[100%] xl:w-[100%] lg:w-[100%] sm:w-[100%] w-[100%] justify-between items-center mx-auto">
                                 <div className="w-[98%] h-[360px] 2xl:w-[98%] xl:w-[98%] lg:w-[98%] md:w-[98%] sm:w-[98%] 2xl:h-[600px] xl:h-[600px] lg:h-[600px] md:h-[400px] border rounded-[20px]">
                                     <div className="w-full h-[90%]">
@@ -89,8 +90,8 @@ const CompanyCarousel = () => {
                         </div>
                     </div>
                     <div className='2xl:flex 2xl:gap-3 gap-3 xl:flex xl:gap-3 lg:flex md:flex sm:flex block mt-[10px] 2xl:mt-0 xl:mt-0 lg:mt-0 md:mt-0 sm:mt-0 items-center'>
-                        <button className='block w-[220px] h-[40px] border rounded-[20px] font-semibold text-[#088269] border-[#088269] 2xl:text-[14px] xl:text-[14px] lg:text-[13px] md:text-[12px] sm:text-[12px] text-[12px] '>Бесплатная консультация</button>
-                        <button className='block ml-[10px] 2xl:ml-0 xl:ml-0 lg:ml-0 md:ml-0 sm:ml-0 2xl:mt-0 xl:mt-0 lg:mt-0 md:mt-0 sm:mt-0 mt-[10px] w-[200px] h-[40px] border rounded-[20px] font-semibold bg-[#088269] border-[#088269] text-white 2xl:text-[16px] xl:text-[14px] lg:text-[13px]  md:text-[12px] sm:text-[12px] text-[12px]'>Рассчитать стоимость</button>
+                        <Link to='/contact'><button className='block w-[220px] h-[40px] border rounded-[20px] font-semibold text-[#088269] border-[#088269] 2xl:text-[14px] xl:text-[14px] lg:text-[13px] md:text-[12px] sm:text-[12px] text-[12px] '>Бесплатная консультация</button></Link>
+                        <Link to='/uslugi'><button className='block ml-[10px] 2xl:ml-0 xl:ml-0 lg:ml-0 md:ml-0 sm:ml-0 2xl:mt-0 xl:mt-0 lg:mt-0 md:mt-0 sm:mt-0 mt-[10px] w-[200px] h-[40px] border rounded-[20px] font-semibold bg-[#088269] border-[#088269] text-white 2xl:text-[16px] xl:text-[14px] lg:text-[13px]  md:text-[12px] sm:text-[12px] text-[12px]'>Рассчитать стоимость</button></Link>
                     </div>
                 </div>
             </div>

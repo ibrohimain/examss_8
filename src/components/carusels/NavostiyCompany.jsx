@@ -63,7 +63,7 @@ const NavostiyCompany = () => {
                 <div className='w-[100%] 2xl:w-[75%] xl:w-[80%] lg:w-[80%] md:w-[100%] sm:w-[100%] h-[100%] 2xl:h-[100%] xl:h-[100%] lg:h-[100%] md:h-[90%]'>
                     <Slider ref={sliderRef} {...settings} className='w-full mx-auto mt-[50px]'>
                         {navostyCompany.map((item, index) => (
-                            <div key={index} className='px-2 w-[50%]'>
+                            <div key={index} className='px-2 w-[50%] cursor-pointer'>
                                 <div className="w-[100%] 2xl:h-[400px] xl:h-[370px] lg:h-[350px] md:h-[300px] sm:h-[330px] h-[250px] border rounded-[20px]">
                                     <div className="w-[100%] 2xl:h-[70%] xl:h-[65%] lg:h-[65%] md:h-[60%] sm:h-[60%] h-[65%] bg-[white] flex items-center justify-center relative rounded-[20px]">
 

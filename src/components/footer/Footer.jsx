@@ -31,23 +31,23 @@ const Footer = () => {
           <div className='2xl:w-[250px] xl:w-[250px] lg:w-[230px] md:w-[200px] sm:w-[120px] mt-[60px] '>
             <h2 className='text-white flex items-center gap-2 2xl:text-[18px] xl:text-[18px] lg:text-[16px] md:text-[16px] sm:text-[16px] w-[98%] mx-auto pt-3 2xl:pt-0 xl:pt-0 lg:pt-0 md:pt-0 sm:pt-0'>Покупателям <FaMinus className={`text-[18px] mt-[5px] font-extralight 2xl:hidden xl:hidden sm:hidden lg:hidden md:hidden block transition-transform transform ${isOpen.buyers ? ' rotate-180' : ''}`} onClick={() => toggleSection('buyers')} /></h2>
             <hr className='w-[100%] mt-[10px]' />
-            <div className={`2xl:flex xl:flex lg:flex  gap-[100px] 2xl:justify-between xl:justify-between lg:justify-between md:justify-between sm:justify-between mt-[20px] 2xl:w-full xl:w-full lg:w-full md:w-full sm:w-full  w-[98%] mx-auto overflow-hidden transition-all duration-500 ${isOpen.buyers ? 'max-h-[500px]' : 'max-h-0'} 2xl:overflow-visible xl:overflow-visible lg:overflow-visible md:overflow-visible sm:overflow-visible`}>
-              <ul>
+            <div className={`2xl:flex xl:flex lg:flex gap-[80px] 2xl:justify-between xl:justify-between lg:justify-between md:justify-between sm:justify-between mt-[20px] 2xl:w-full xl:w-full lg:w-full md:w-full sm:w-full w-[98%] mx-auto overflow-hidden transition-all duration-500 ${isOpen.buyers ? 'max-h-[500px]' : 'max-h-0'} 2xl:overflow-visible xl:overflow-visible lg:overflow-visible md:overflow-visible sm:overflow-visible`}>
+              <ul className='w-[50%]'>
                 <li className='text-white cursor-pointer font-light 2xl:text-[16px] xl:text-[16px] lg:text-[15px] md:text-[12px] sm:text-[12px]'><Link to='/acompany'>О компании</Link></li>
-                <li className='text-white cursor-pointer font-light mt-[3px] 2xl:text-[16px] xl:text-[16px] lg:text-[15px] md:text-[12px] sm:text-[10px]'>Сертификаты</li>
-                <li className='text-white cursor-pointer font-light mt-[3px] 2xl:text-[16px] xl:text-[16px] lg:text-[15px] md:text-[12px] sm:text-[10px]'>Вакансии</li>
-                <li className='text-white cursor-pointer font-light mt-[3px] 2xl:text-[16px] xl:text-[16px] lg:text-[15px] md:text-[12px] sm:text-[10px]'>Гарантии</li>
-                <li className='text-white cursor-pointer font-light mt-[3px] 2xl:text-[16px] xl:text-[16px] lg:text-[15px] md:text-[12px] sm:text-[10px]'>Услуги</li>
-                <li className='text-white cursor-pointer font-light mt-[3px] 2xl:text-[16px] xl:text-[16px] lg:text-[15px] md:text-[12px] sm:text-[10px]'>Акции</li>
-                <li className='text-white cursor-pointer font-light mt-[3px] 2xl:text-[16px] xl:text-[16px] lg:text-[15px] md:text-[12px] sm:text-[10px]'>Доставка</li>
+                <li className='text-white cursor-pointer font-light mt-[3px] 2xl:text-[16px] xl:text-[16px] lg:text-[15px] md:text-[12px] sm:text-[10px]'><Link to='/certificat'>Сертификаты</Link></li>
+                <li className='text-white cursor-pointer font-light mt-[3px] 2xl:text-[16px] xl:text-[16px] lg:text-[15px] md:text-[12px] sm:text-[10px]'><Link to='/vakansia'>Вакансии</Link></li>
+                <li className='text-white cursor-pointer font-light mt-[3px] 2xl:text-[16px] xl:text-[16px] lg:text-[15px] md:text-[12px] sm:text-[10px]'><Link to='/guarantes'>Гарантии</Link></li>
+                <li className='text-white cursor-pointer font-light mt-[3px] 2xl:text-[16px] xl:text-[16px] lg:text-[15px] md:text-[12px] sm:text-[10px]'><Link to='/uslugi'>Услуги</Link></li>
+                <li className='text-white cursor-pointer font-light mt-[3px] 2xl:text-[16px] xl:text-[16px] lg:text-[15px] md:text-[12px] sm:text-[10px]'><Link to='/aksia'>Акции</Link></li>
+                <li className='text-white cursor-pointer font-light mt-[3px] 2xl:text-[16px] xl:text-[16px] lg:text-[15px] md:text-[12px] sm:text-[10px]'><Link to='/delivery'>Доставка</Link></li>
               </ul>
-              <ul>
-                <li className='text-white cursor-pointer font-light  2xl:text-[16px] xl:text-[16px] lg:text-[15px] md:text-[12px] sm:text-[10px] '>Оплата</li>
+              <ul className='w-[50%]'>
+                <li className='text-white cursor-pointer font-light  2xl:text-[16px] xl:text-[16px] lg:text-[15px] md:text-[12px] sm:text-[10px] '><Link to='/payment'>Оплата</Link></li>
                 <li className='text-white cursor-pointer font-light  2xl:text-[16px] xl:text-[16px] lg:text-[15px] md:text-[12px] sm:text-[10px] mt-[3px]'>Возврат</li>
                 <li className='text-white cursor-pointer font-light  2xl:text-[16px] xl:text-[16px] lg:text-[15px] md:text-[12px] sm:text-[10px] mt-[3px]'>FAQ</li>
                 <li className='text-white cursor-pointer font-light  2xl:text-[16px] xl:text-[16px] lg:text-[15px] md:text-[12px] sm:text-[10px] mt-[3px]'>Лизинг</li>
                 <li className='text-white cursor-pointer font-light  2xl:text-[16px] xl:text-[16px] lg:text-[15px] md:text-[12px] sm:text-[10px] mt-[3px]'>Отзывы</li>
-                <li className='text-white cursor-pointer font-light  2xl:text-[16px] xl:text-[16px] lg:text-[15px] md:text-[12px] sm:text-[10px] mt-[3px]'>Блог</li>
+                <li className='text-white cursor-pointer font-light  2xl:text-[16px] xl:text-[16px] lg:text-[15px] md:text-[12px] sm:text-[10px] mt-[3px]'><Link to=''>Блог</Link></li>
               </ul>
             </div>
           </div>
@@ -60,20 +60,20 @@ const Footer = () => {
             <div className={` overflow-hidden 2xl:flex xl:flex lg:flex md:flex sm:flex justify-between mt-[20px]  2xl:w-full xl:w-full lg:w-full md:w-full sm:w-full  w-[98%] mx-auto transition-all duration-500 ${isOpen.catalog ? 'max-h-[500px] ' : 'max-h-0 '} 2xl:overflow-visible xl:overflow-visible lg:overflow-visible md:overflow-visible sm:overflow-visible`}>
               <ul>
                 <li className='text-white cursor-pointer font-light  2xl:text-[16px] xl:text-[16px] lg:text-[15px] md:text-[12px] sm:text-[10px]'>Реанимация</li>
-                <li className='text-white cursor-pointer font-light  2xl:text-[16px] xl:text-[16px] lg:text-[15px] md:text-[12px] sm:text-[10px] mt-[3px]'>Хирургия</li>
-                <li className='text-white cursor-pointer font-light  2xl:text-[16px] xl:text-[16px] lg:text-[15px] md:text-[12px] sm:text-[10px] mt-[3px]'>Офтальмология</li>
-                <li className='text-white cursor-pointer font-light  2xl:text-[16px] xl:text-[16px] lg:text-[15px] md:text-[12px] sm:text-[10px] mt-[3px]'>Лабораторная диагностика</li>
-                <li className='text-white cursor-pointer font-light  2xl:text-[16px] xl:text-[16px] lg:text-[15px] md:text-[12px] sm:text-[10px] mt-[3px]'>Акушерство и Гинекология</li>
-                <li className='text-white cursor-pointer font-light  2xl:text-[16px] xl:text-[16px] lg:text-[15px] md:text-[12px] sm:text-[10px] mt-[3px]'>Гистология</li>
-                <li className='text-white cursor-pointer font-light  2xl:text-[16px] xl:text-[16px] lg:text-[15px] md:text-[12px] sm:text-[10px] mt-[3px]'>Косметология</li>
+                <li className='text-white cursor-pointer font-light  2xl:text-[16px] xl:text-[16px] lg:text-[15px] md:text-[12px] sm:text-[10px] mt-[3px]'><Link to='/catalog'>Хирургия</Link></li>
+                <li className='text-white cursor-pointer font-light  2xl:text-[16px] xl:text-[16px] lg:text-[15px] md:text-[12px] sm:text-[10px] mt-[3px]'><Link to='/catalog' >Офтальмология</Link></li>
+                <li className='text-white cursor-pointer font-light  2xl:text-[16px] xl:text-[16px] lg:text-[15px] md:text-[12px] sm:text-[10px] mt-[3px]'><Link to='/catalog' >Лабораторная диагностика</Link></li>
+                <li className='text-white cursor-pointer font-light  2xl:text-[16px] xl:text-[16px] lg:text-[15px] md:text-[12px] sm:text-[10px] mt-[3px]'><Link to='/catalog' >Акушерство и Гинекология</Link></li>
+                <li className='text-white cursor-pointer font-light  2xl:text-[16px] xl:text-[16px] lg:text-[15px] md:text-[12px] sm:text-[10px] mt-[3px]'><Link to='/catalog' >Гистология</Link></li>
+                <li className='text-white cursor-pointer font-light  2xl:text-[16px] xl:text-[16px] lg:text-[15px] md:text-[12px] sm:text-[10px] mt-[3px]'><Link to='/catalog' >Косметология</Link></li>
               </ul>
               <ul>
                 <li className='text-white cursor-pointer font-l ight  2xl:text-[16px] xl:text-[16px] lg:text-[15px] md:text-[12px] sm:text-[10px]'>Орториноларингология</li>
-                <li className='text-white cursor-pointer font-light  2xl:text-[16px] xl:text-[16px] lg:text-[15px] md:text-[12px] sm:text-[10px] mt-[3px]'>Рентгенология и томография</li>
-                <li className='text-white cursor-pointer font-light  2xl:text-[16px] xl:text-[16px] lg:text-[15px] md:text-[12px] sm:text-[10px] mt-[3px]'>Стрерилизация</li>
-                <li className='text-white cursor-pointer font-light  2xl:text-[16px] xl:text-[16px] lg:text-[15px] md:text-[12px] sm:text-[10px] mt-[3px]'>Физиотерапия и реабилитация</li>
-                <li className='text-white cursor-pointer font-light  2xl:text-[16px] xl:text-[16px] lg:text-[15px] md:text-[12px] sm:text-[10px] mt-[3px]'>Функциональная диагностика</li>
-                <li className='text-white cursor-pointer font-light  2xl:text-[16px] xl:text-[16px] lg:text-[15px] md:text-[12px] sm:text-[10px] mt-[3px]'>Эндоскопия</li>
+                <li className='text-white cursor-pointer font-light  2xl:text-[16px] xl:text-[16px] lg:text-[15px] md:text-[12px] sm:text-[10px] mt-[3px]'><Link to='/catalog'>Рентгенология и томография</Link></li>
+                <li className='text-white cursor-pointer font-light  2xl:text-[16px] xl:text-[16px] lg:text-[15px] md:text-[12px] sm:text-[10px] mt-[3px]'><Link to='/catalog'>Стрерилизация</Link></li>
+                <li className='text-white cursor-pointer font-light  2xl:text-[16px] xl:text-[16px] lg:text-[15px] md:text-[12px] sm:text-[10px] mt-[3px]'><Link to='/catalog'>Физиотерапия и реабилитация</Link></li>
+                <li className='text-white cursor-pointer font-light  2xl:text-[16px] xl:text-[16px] lg:text-[15px] md:text-[12px] sm:text-[10px] mt-[3px]'><Link to='/catalog'>Функциональная диагностика</Link></li>
+                <li className='text-white cursor-pointer font-light  2xl:text-[16px] xl:text-[16px] lg:text-[15px] md:text-[12px] sm:text-[10px] mt-[3px]'><Link to='/catalog'>Эндоскопия</Link></li>
               </ul>
               <ul>
                 <li className='text-white cursor-pointer font-light  2xl:text-[16px] xl:text-[16px] lg:text-[15px] md:text-[12px] sm:text-[10px] '>Новинки</li>

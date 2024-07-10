@@ -4,6 +4,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { Data } from "./data";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 export default function SimpleSlider() {
     const [activeIndex, setActiveIndex] = useState(0);
@@ -50,8 +51,8 @@ export default function SimpleSlider() {
                                     <h2 className="text-[20px] text-center 2xl:text-[38px] xl:text-[28px] lg:text-[24px] lg:w-[400px] md:text-[18px] sm:text-[16px] sm:w-[400px] 2xl:ml-[30px] xl:ml-[30px] md:ml-[20px] sm:ml-[10px] font-semibold 2xl:w-[100%] xl:w-[400px] sm:text-center 2xl:text-start xl:text-start lg:text-start md:text-start md:w-[250px]">{item.common_name}</h2>
                                     <p className="text-[gray] w-[100%] text-[14px] text-center 2xl:text-[16px] xl:text-[13px] lg:text-[12px] sm:text-[11px] md:text-[11px] sm:w-[100%] md:w-[100%] 2xl:ml-[30px] xl:ml-[30px] md:ml-[20px] sm:ml-[10px] 2xl:w-[300px] xl:w-[250px] sm:text-center 2xl:text-start xl:text-start lg:text-start md:text-start lg:w-[180px] mx-auto">{item.title_name}</p>
                                     <div className="mt-[30px] 2xl:mt-[80px] xl:mt-[60px] lg:mt-[80px] 2xl:ml-[30px] xl:ml-[30px] md:ml-[20px] sm:ml-[10px] flex">
-                                        <button className='h-[40px] w-[49%] text-[11px] 2xl:w-[170px] xl:w-[140px] xl:h-[45px] 2xl:h-[42px] lg:h-[38px] 2xl:text-[16px] lg:text-[12px] md:text-[10px] md:w-[100px] md:h-[30px] lg:w-[120px] sm:w-[100px] sm:text-[10px] sm:h-[30px] border rounded-[20px] text-white font-normal bg-[#088269] mr-2'>{item.bg_title}</button>
-                                        <button className='h-[40px] w-[49%] text-[11px] 2xl:w-[170px] xl:w-[130px] xl:h-[45px] 2xl:h-[42px] lg:h-[38px] 2xl:text-[16px] lg:text-[12px] md:text-[10px] md:w-[100px] md:h-[30px] lg:w-[100px] sm:w-[100px] sm:text-[10px] sm:h-[30px] border rounded-[20px] text-[#088269] font-medium'>{item.wh_title}</button>
+                                        <button className='h-[40px] w-[49%] text-[11px] 2xl:w-[170px] xl:w-[140px] xl:h-[45px] 2xl:h-[42px] lg:h-[38px] 2xl:text-[16px] lg:text-[12px] md:text-[10px] md:w-[100px] md:h-[30px] lg:w-[120px] sm:w-[100px] sm:text-[10px] sm:h-[30px] border rounded-[20px] text-white font-normal bg-[#088269] mr-2'><Link to='/brendpage'>{item.bg_title}</Link></button>
+                                        <button className='h-[40px] w-[49%] text-[11px] 2xl:w-[170px] xl:w-[130px] xl:h-[45px] 2xl:h-[42px] lg:h-[38px] 2xl:text-[16px] lg:text-[12px] md:text-[10px] md:w-[100px] md:h-[30px] lg:w-[100px] sm:w-[100px] sm:text-[10px] sm:h-[30px] border rounded-[20px] text-[#088269] font-medium'><Link to='/catalog'>{item.wh_title}d</Link></button>
                                     </div>
                                 </div>
                                 <div className=" h-[60%] w-[100%] flex justify-end 2xl:w-[65%] xl:w-[65%] lg:w-[68%] md:w-[65%] sm:w-[100%] sm:h-[268px] xl:h-[100%] 2xl:h-[100%] md:h-[100%] relative">
@@ -64,8 +65,9 @@ export default function SimpleSlider() {
                             </div>
                         </div>
                     </div>
-                ))}
-            </Slider>
-        </div>
+                ))
+                }
+            </Slider >
+        </div >
     );
 }

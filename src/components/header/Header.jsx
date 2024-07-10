@@ -39,6 +39,9 @@ const Header = () => {
     const handleSubmit = (event) => {
         event.preventDefault();
         const validationErrors = {};
+        const formData = { phone1, phone2, textarea };
+        localStorage.setItem('formData', JSON.stringify(formData));
+        setIsModalVisible(false);
         if (!phone1) validationErrors.phone1 = 'Phone number is required';
         if (!phone2) validationErrors.phone2 = 'Phone number is required';
         if (!textarea) validationErrors.textarea = 'Textarea is required';

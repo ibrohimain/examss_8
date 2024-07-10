@@ -4,6 +4,7 @@ import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import { brendData } from './brendData';
+import { Link } from 'react-router-dom';
 
 const BrendCarousel = () => {
 
@@ -66,7 +67,7 @@ const BrendCarousel = () => {
                 <div className='2xl:w-[70%] xl:w-[80%] lg:w-[80%] md:w-[80%]  2xl:h-[100%] xl:h-[100%] lg:h-[100%] md:h-[100%] h-[75%] '>
                     <Slider ref={sliderRef} {...settings} className='w-full mx-auto mt-[50px]'>
                         {brendData.map((item, index) => (
-                            <div key={index} className='px-2 mx-auto'>
+                            <div key={index} className='px-2 mx-auto cursor-pointer'>
                                 <div className="w-[100%] h-[280px] border rounded-[20px] ">
                                     <div className="w-[100%] h-[70%] bg-[white] flex items-center justify-center relative rounded-tr-[20px] rounded-tl-[20px] ">
                                         <img
@@ -93,7 +94,7 @@ const BrendCarousel = () => {
                             </div>
                         </div>
                         <div className='w-full flex 2xl:justify-end xl:justify-end lg:justify-end md:justify-end sm:justify-end justify-center gap-3 '>
-                            <button className='w-[200px] h-[40px] border rounded-[20px] font-semibold bg-[#088269] border-[#088269] text-white'>Сертификаты</button>
+                            <Link to='/certificat'><button className='w-[200px] h-[40px] border rounded-[20px] font-semibold bg-[#088269] border-[#088269] text-white'>Сертификаты</button></Link>
                         </div>
                     </div>
                 </div>

@@ -12,32 +12,32 @@ const Palata = () => {
                         <ul>
                             <li className='2xl:text-[14px] xl:text-[13px] lg:text-[12px] md:text-[12px] sm:text-[11px] text-[10px] font-medium'>1. Аппарат искусственной вентиляции лёгких</li>
                             <li className='2xl:text-[14px] xl:text-[13px] lg:text-[12px] md:text-[12px] sm:text-[11px] text-[10px] font-medium'>2. Аппарат искусственной вентиляции легких транспортный</li>
-                            <li className='2xl:text-[14px] xl:text-[13px] lg:text-[12px] md:text-[12px] sm:text-[11px] text-[10px] font-medium'>3. Аппарат искусственной вентиляции легких транспортный</li>
-                            <li className='2xl:text-[14px] xl:text-[13px] lg:text-[12px] md:text-[12px] sm:text-[11px] text-[10px] font-medium'>4. Аппарат искусственной вентиляции легких транспортный</li>
-                            <li className='2xl:text-[14px] xl:text-[13px] lg:text-[12px] md:text-[12px] sm:text-[11px] text-[10px] font-medium'>5. Аппарат искусственной вентиляции легких транспортный</li>
-                            <li className='2xl:text-[14px] xl:text-[13px] lg:text-[12px] md:text-[12px] sm:text-[11px] text-[10px] font-medium'>6. Аппарат искусственной вентиляции легких транспортный</li>
-                            <li className='2xl:text-[14px] xl:text-[13px] lg:text-[12px] md:text-[12px] sm:text-[11px] text-[10px] font-medium'>7. Аппарат искусственной вентиляции легких транспортный</li>
-                            <li className='2xl:text-[14px] xl:text-[13px] lg:text-[12px] md:text-[12px] sm:text-[11px] text-[10px] font-medium'>8. Аппарат искусственной вентиляции легких транспортный</li>
-                            <li className='2xl:text-[14px] xl:text-[13px] lg:text-[12px] md:text-[12px] sm:text-[11px] text-[10px] font-medium'>9. Аппарат искусственной вентиляции легких транспортный</li>
+                            <li className='2xl:text-[14px] xl:text-[13px] lg:text-[12px] md:text-[12px] sm:text-[11px] text-[10px] font-medium'>3. Дыхательный мешок для ручной искусственной вентиляции легких</li>
+                            <li className='2xl:text-[14px] xl:text-[13px] lg:text-[12px] md:text-[12px] sm:text-[11px] text-[10px] font-medium'>4. Монитор пациента на 5 параметров</li>
+                            <li className='2xl:text-[14px] xl:text-[13px] lg:text-[12px] md:text-[12px] sm:text-[11px] text-[10px] font-medium'>5. Монитор пациента на 8 параметров</li>
+                            <li className='2xl:text-[14px] xl:text-[13px] lg:text-[12px] md:text-[12px] sm:text-[11px] text-[10px] font-medium'>6. Шприцевой насос</li>
+                            <li className='2xl:text-[14px] xl:text-[13px] lg:text-[12px] md:text-[12px] sm:text-[11px] text-[10px] font-medium'>7. Инфузионный насос</li>
+                            <li className='2xl:text-[14px] xl:text-[13px] lg:text-[12px] md:text-[12px] sm:text-[11px] text-[10px] font-medium'>8. Набор для интубации трахеи</li>
+                            <li className='2xl:text-[14px] xl:text-[13px] lg:text-[12px] md:text-[12px] sm:text-[11px] text-[10px] font-medium'>9. Дефибриллятор</li>
                             {/* Repeat for other items */}
                         </ul>
                         <ul className=''>
-                            <li className='2xl:text-[14px] xl:text-[13px] lg:text-[12px] md:text-[12px] sm:text-[11px] text-[10px] font-medium'>10. Аппарат искусственной вентиляции легких транспортный</li>
-                            <li className='2xl:text-[14px] xl:text-[13px] lg:text-[12px] md:text-[12px] sm:text-[11px] text-[10px] font-medium'>11. Аппарат искусственной вентиляции легких транспортный</li>
-                            <li className='2xl:text-[14px] xl:text-[13px] lg:text-[12px] md:text-[12px] sm:text-[11px] text-[10px] font-medium'>12. Аппарат искусственной вентиляции легких транспортный</li>
-                            <li className='2xl:text-[14px] xl:text-[13px] lg:text-[12px] md:text-[12px] sm:text-[11px] text-[10px] font-medium'>13. Аппарат искусственной вентиляции легких транспортный</li>
-                            <li className='2xl:text-[14px] xl:text-[13px] lg:text-[12px] md:text-[12px] sm:text-[11px] text-[10px] font-medium'>14. Аппарат искусственной вентиляции легких транспортный</li>
-                            <li className='2xl:text-[14px] xl:text-[13px] lg:text-[12px] md:text-[12px] sm:text-[11px] text-[10px] font-medium'>15. Аппарат искусственной вентиляции легких транспортный</li>
-                            <li className='2xl:text-[14px] xl:text-[13px] lg:text-[12px] md:text-[12px] sm:text-[11px] text-[10px] font-medium'>16. Аппарат искусственной вентиляции легких транспортный</li>
-                            <li className='2xl:text-[14px] xl:text-[13px] lg:text-[12px] md:text-[12px] sm:text-[11px] text-[10px] font-medium'>17. Аппарат искусственной вентиляции легких транспортный</li>
-                            <li className='2xl:text-[14px] xl:text-[13px] lg:text-[12px] md:text-[12px] sm:text-[11px] text-[10px] font-medium'>18. Аппарат искусственной вентиляции легких транспортный</li>
+                            <li className='2xl:text-[14px] xl:text-[13px] lg:text-[12px] md:text-[12px] sm:text-[11px] text-[10px] font-medium'>10. Матрац термостабилизирующий</li>
+                            <li className='2xl:text-[14px] xl:text-[13px] lg:text-[12px] md:text-[12px] sm:text-[11px] text-[10px] font-medium'>11. Автоматический анализатор газов крови</li>
+                            <li className='2xl:text-[14px] xl:text-[13px] lg:text-[12px] md:text-[12px] sm:text-[11px] text-[10px] font-medium'>12. Электрокардиограф</li>
+                            <li className='2xl:text-[14px] xl:text-[13px] lg:text-[12px] md:text-[12px] sm:text-[11px] text-[10px] font-medium'>13. Транспортируемый рентгеновский аппарат</li>
+                            <li className='2xl:text-[14px] xl:text-[13px] lg:text-[12px] md:text-[12px] sm:text-[11px] text-[10px] font-medium'>14. Портативный ультразвуковой диагностический аппарат</li>
+                            <li className='2xl:text-[14px] xl:text-[13px] lg:text-[12px] md:text-[12px] sm:text-[11px] text-[10px] font-medium'>15. Кровать трёхсекционная с ограждением</li>
+                            <li className='2xl:text-[14px] xl:text-[13px] lg:text-[12px] md:text-[12px] sm:text-[11px] text-[10px] font-medium'>16. Кровать-вес</li>
+                            <li className='2xl:text-[14px] xl:text-[13px] lg:text-[12px] md:text-[12px] sm:text-[11px] text-[10px] font-medium'>17. Электроэнцефалограф 8-канальный</li>
+                            <li className='2xl:text-[14px] xl:text-[13px] lg:text-[12px] md:text-[12px] sm:text-[11px] text-[10px] font-medium'>18. Пневмокомпрессорная профилактика тромбоэмболических осложнений и лимфостаза</li>
                         </ul>
                     </div>
                 );
             case 'products':
                 return (
                     <div className='w-[95%] h-auto mx-auto pt-[10px] pb-[10px]'>
-                        <SpisokCarousel/>
+                        <SpisokCarousel />
 
                     </div>
                 );

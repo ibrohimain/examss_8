@@ -257,7 +257,7 @@ const Directions = () => {
 
     return (
         <div>
-            <div className='w-[95%] 2xl:w-[1440px] mb-[80px] mx-auto mt-[40px]'>
+            <div className='w-[95%] 2xl:w-[1440px] mb-[80px] mx-auto mt-[40px] '>
                 <div className='xl:w-[100%] xl:h-[1200px] lg:w-[100%] md:w-[100%] 2xl:flex xl:flex lg:flex md:flex justify-between mx-auto'>
                     <div className=' 2xl:w-[29%] xl:w-[22%] lg:w-[27%] md:w-[25%] sm:w-[100%] h-auto rounded-[10px] md:order-2 sm:order-1 2xl:order-1 xl:order-1 lg:order-1 2xl:h-[500px] xl:h-auto lg:h-auto md:h-[530px] sm:h-auto sm:mb-[10px] sm:flex sm:items-center 2xl:items-start xl:items-start lg:items-start'>
                         <div className='w-[95%] mx-auto' onClick={toggleList}>

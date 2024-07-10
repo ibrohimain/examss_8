@@ -5,6 +5,7 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import { brendData } from '../../components/carusels/brendData';
 import { certificate } from './certifcate';
+import { Link } from 'react-router-dom';
 
 const Certificate = () => {
 
@@ -67,7 +68,7 @@ const Certificate = () => {
                 <div className='2xl:w-[70%] xl:w-[80%] lg:w-[80%] md:w-[80%] 2xl:h-[100%] xl:h-[100%] lg:h-[100%] md:h-[100%] h-[75%] '>
                     <Slider ref={sliderRef} {...settings} className='w-full mx-auto mt-[50px]'>
                         {certificate.map((item, index) => (
-                            <div key={index} className='px-2'>
+                            <div key={index} className='px-2 cursor-pointer'>
                                 <div className="w-[100%] h-[220px] border rounded-[20px]">
                                     <div className="w-[100%] h-[100%] bg-[white] flex items-center justify-center relative border rounded-[10px] ">
                                         <img
@@ -91,7 +92,7 @@ const Certificate = () => {
                             </div>
                         </div>
                         <div className='w-full flex 2xl:justify-end xl:justify-end lg:justify-end md:justify-end sm:justify-end justify-center gap-3 '>
-                            <button className='w-[200px] h-[40px] border rounded-[20px] font-semibold bg-[#088269] border-[#088269] text-white'>Сертификаты</button>
+                            <Link to='/certificat'><button className='w-[200px] h-[40px] border rounded-[20px] font-semibold bg-[#088269] border-[#088269] text-white'>Сертификаты</button></Link>
                         </div>
                     </div>
                 </div>

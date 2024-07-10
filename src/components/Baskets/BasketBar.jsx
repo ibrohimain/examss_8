@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { AiOutlinePlus } from 'react-icons/ai';
 import { FiMinus } from 'react-icons/fi';
 import { IoIosHeartEmpty } from 'react-icons/io';
@@ -14,6 +14,7 @@ const BasketBar = () => {
     const cart = useSelector((state) => state.cart.data);
     const totalAmounts = useSelector((state) => state.cart.totalAmounts);
     const totalItems = useSelector((state) => state.cart.totalItems);
+    const modalRef = useRef();
 
     useEffect(() => {
         const cartData = JSON.parse(localStorage.getItem('cart')) || [];
@@ -47,6 +48,24 @@ const BasketBar = () => {
         setOrderModalVisible(false);
     };
 
+    useEffect(() => {
+        const handleOutsideClick = (event) => {
+            if (modalRef.current && !modalRef.current.contains(event.target)) {
+                handleCloseModal();
+            }
+        };
+
+        if (isOrderModalVisible) {
+            document.addEventListener('mousedown', handleOutsideClick);
+        } else {
+            document.removeEventListener('mousedown', handleOutsideClick);
+        }
+
+        return () => {
+            document.removeEventListener('mousedown', handleOutsideClick);
+        };
+    }, [isOrderModalVisible]);
+
     return (
         <div className='2xl:w-[1440px] xl:w-[95%] lg:w-[95%] md:w-[95%] sm:w-[95%] w-[95%] mx-auto h-auto mt-[10px] mb-[10px] 2xl:flex xl:flex lg:flex md:flex justify-between'>
             <div className='2xl:w-[74%] xl:w-[74%] lg:w-[74%] md:w-[74%] sm:w-[100%] w-[100%]'>
@@ -74,7 +93,7 @@ const BasketBar = () => {
                                         <p className='text-[gray] 2xl:text-[16px] xl:text-[16px] lg:text-[15px] md:text-[13px] sm:text-[12px] text-[12px]'>В наличии</p>
                                     </div>
                                     <div className='2xl:h-[100%] xl:h-[100%] lg:h-[100%] md:h-[100%] sm:h-[50%] h-[50%] w-[100%] flex flex-col 2xl:items-center xl:items-center lg:items-center md:items-center sm:items-start items-start'>
-                                        <h2 className='2xl:text-[22px] xl:text-[20px] lg:text-[18px] md:text-[18px] sm:text-[16px] text-[14px] font-medium mt-[2px]'>{item.price * item.quantity} руб.</h2>
+                                        <h2 className='2xl:text-[22px] xl:text-[20px] lg:text-[18px] md:text-[18px] sm:text-[16px] text-[14px] font-medium mt-[2px]'>{item.price}</h2>
                                         <div className='2xl:w-[100px] xl:w-[95px] lg:w-[90px] md:w-[90px] sm:w-[90px] w-[80px] 2xl:h-[35px] xl:h-[33px] lg:h-[31px] md:h-[28px] sm:h-[26px] h-[25px] border border-[#088269] rounded-[20px] flex items-center justify-center gap-2 mt-[30px]'>
                                             <div onClick={() => decreaseQty(item.id, item.quantity)} className='cursor-pointer 2xl:text-[16px] xl:text-[15px] lg:text-[14px] sm:text-[13px] text-[12px]'>
                                                 <FiMinus />
@@ -112,7 +131,7 @@ const BasketBar = () => {
                         <hr className='w-[100%] border-[#E5E2EE]' />
                         <ul className='w-[100%] h-[80px]'>
                             <li className='w-[100%] h-[50%] flex items-center justify-between font-medium 2xl:text-[16px] xl:text-[15px] lg:text-[14px] md:text-[14px] sm:text-[13px] text-[12px]'>
-                                <p>Товары ({totalItems} шт)</p><span>{totalAmounts} руб.</span>
+                                <p>Товары ({totalItems} шт)</p><span></span>
                             </li>
                             <li className='w-[100%] h-[50%] flex items-center justify-between font-medium 2xl:text-[16px] xl:text-[15px] lg:text-[14px] md:text-[14px] sm:text-[13px] text-[12px]'>
                                 <p>Скидка</p><span>0 руб.</span>
@@ -129,12 +148,15 @@ const BasketBar = () => {
             </div>
             {isOrderModalVisible && (
                 <div className='fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50'>
-                    <div className='bg-white w-[400px] h-[400px] rounded-[15px] flex flex-col items-center justify-center p-4'>
-                        <div>
+                    <div ref={modalRef} className='bg-white w-[400px] h-[400px] rounded-[15px] flex flex-col items-center justify-center p-4'>
+                        <div className='w-[100%]'>
                             {cart.map((item) => (
-                                <div key={item.id}>
-                                    <img src={item.img} alt={item.name} />
-                                    <p>{item.quantity}</p>
+                                <div key={item.id} className='w-[100%] h-[70px] flex justify-between items-center'>
+                                    <img src={item.img} alt={item.name} className='w-[50px]' />
+                                    <div>
+                                        <h2 className='text-[14px]'>{item.name}</h2>
+                                        <p className='text-[12px]'>{item.common_name}</p>
+                                    </div>
                                 </div>
                             ))}
                         </div>

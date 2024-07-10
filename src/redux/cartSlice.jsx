@@ -18,8 +18,8 @@ const CartSlice = createSlice({
       if (existingItem) {
         const tempCart = state.data.map((item) => {
           if (item.id == action.payload.id) {
-            let newQty = item.quantity + action.payload.quantity;
-            let newTotalprice = newQty * item.price;
+            let newQty = item.quantity;
+            let newTotalprice = newQty + item.price;
             console.log(newTotalprice, "sal");
             return {
               ...item,
@@ -51,12 +51,12 @@ const CartSlice = createSlice({
       if (itemToUpdate) {
         const validQuantity = Math.max(quantity || 1, 1);
         itemToUpdate.quantity = validQuantity;
-        itemToUpdate.totalPrice = itemToUpdate.price * quantity;
+        itemToUpdate.totalPrice = itemToUpdate.price;
       }
     },
     getCartTotal(state) {
       state.totalAmounts = state.data.reduce((cartTotal, cartItem) => {
-        return (cartTotal += cartItem.totalPrice);
+        return (cartItem.totalPrice);
       }, 0);
       state.totalItems = state.data.length;
     },

@@ -7,7 +7,6 @@ import BrendCarousel from '../../components/carusels/BrendCarousel'
 import NavostiyCompany from '../../components/carusels/NavostiyCompany'
 import Infarmation from '../../components/information/Infarmation'
 import Map from '../../components/map/Map'
-import Podpisku from '../../components/podpisku/Podpisku'
 import CatalogLink from '../../components/CatalogsComponents/CatalogLink.jsx'
 
 const Catalogs = () => {

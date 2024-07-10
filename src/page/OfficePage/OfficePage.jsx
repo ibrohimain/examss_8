@@ -9,8 +9,8 @@ const OfficePage = () => {
         <div className='w-[100%] mx-auto'>
             <Palata />
             <Zakaz />
-            {/* <Infarmation />
-            <Map/> */}
+            <Infarmation />
+            <Map />
         </div>
     )
 }

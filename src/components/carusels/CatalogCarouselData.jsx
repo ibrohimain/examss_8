@@ -122,7 +122,7 @@ const CatalogCarouselData = () => {
                     <h2 className='text-[30px] font-semibold'>Каталог товаров</h2>
                     <ul className='2xl:block xl:block lg:block md:flex sm:flex gap-2'>
                         <li className='text-gray-500 cursor-pointer'>Хиты продаж</li>
-                        <li className='text-gray-500 cursor-pointer'>Новинки</li>
+                        <li className='text-gray-500 cursor-pointer'><Link to='/brendpage'>Новинки</Link></li>
                         <li className='text-gray-500 cursor-pointer'><Link to='/aksia'>Акции</Link></li>
                     </ul>
                 </div>
@@ -180,7 +180,7 @@ const CatalogCarouselData = () => {
                             </div>
                         </div>
                         <div className='2xl:w-[50%] justify-center xl:w-[50%] lg:w-[50%] md:w-[50%] sm:w-[50%] w-[100%] h-[55px] 2xl:flex xl:flex lg:flex md:flex items-center flex gap-3 2xl:gap-3 xl:gap-3 lg:gap-3 md:gap-3 sm:gap-3 text-center 2xl:justify-end xl:justify-end lg:justify-end md:justify-end sm:justify-end'>
-                            <button className='w-[50%] 2xl:w-[70%] xl:w-[50%] lg:w-[60%] md:w-[60%] sm:w-[70%] h-[35px] border rounded-[20px] font-semibold text-[#088269] border-[#088269] 2xl:text-[16px] xl:text-[16px] lg:text-[15px] text-[10px] md:text-[14px] sm:text-[13px]'>Бесплатная консультация</button>
+                            <Link to='/contact' className='w-[70%]'><button className='w-[100%] 2xl:w-[70%] xl:w-[50%] lg:w-[60%] md:w-[60%] sm:w-[70%] h-[35px] border rounded-[20px] font-semibold text-[#088269] border-[#088269] 2xl:text-[16px] xl:text-[16px] lg:text-[15px] text-[10px] md:text-[14px] sm:text-[13px]'>Бесплатная консультация</button></Link>
                             <button className='w-[30%] 2xl:w-[30%] xl:w-[30%] lg:w-[30%] md:w-[30%] sm:w-[30%] h-[35px] border rounded-[20px] font-semibold bg-[#088269] border-[#088269] text-white 2xl:mt-0 xl:mt-0 lg:mt-0 md:mt-0 sm:mt-0 mt-0 text-[10px] 2xl:text-[16px] xl:text-[16px] lg:text-[15px] md:text-[14px] sm:text-[13px]'>Все товары</button>
                         </div>
                     </div>
